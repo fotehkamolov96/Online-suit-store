@@ -1,0 +1,300 @@
+@charset "UTF-8";
+body {
+  font-family: 'IBM Plex Serif', serif;
+  background-color: #ffffff;
+}
+
+.page {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.page-light-header {
+  background-color: #F4F5F7;
+}
+
+.page-light {
+  background-color: #ffffff;
+}
+
+.page-dark {
+  background-color: #F4F5F7;
+}
+
+.wrapper {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+/* ========================= Стилизация Header Start ============================*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+.nav-item {
+  margin-right: 52px;
+}
+
+.nav-link {
+  color: #21243D;
+  text-decoration: none;
+}
+
+.cart {
+  background-image: url(../img/Icons-shop.png);
+  display: block;
+  padding-left: 50px;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+/* ========================= Стилизация Header End ============================*/
+/* ========================= Стилизация Collection title Start ============================*/
+.title-h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: -20px;
+  margin-bottom: 55px;
+}
+
+/* ========================= Стилизация Collection title End ============================*/
+/* ========================= Стилизация  Button Start ============================*/
+.btn {
+  background-color: #21243D;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 20px;
+}
+
+/* ========================= Стилизация Button End ============================*/
+/* ========================= Стилизация Main Start ============================*/
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-item {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50% 0 50%;
+          flex: 50% 0 50%;
+}
+
+.main .sale-description {
+  margin-top: -10px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-right: 250px;
+}
+
+.main .sale-title1 {
+  margin-top: 90px;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.main .sale-title2 {
+  margin-top: -25px;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+/* ========================= Стилизация Main End ============================*/
+/* ========================= Стилизация Notice Start ============================*/
+.notice {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 50px 0;
+}
+
+/* ========================= Стилизация Notice End ============================*/
+/* ========================= Стилизация Collection Products End ============================*/
+.production {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.production-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.production-description {
+  color: #000;
+  margin-top: -10px;
+}
+
+.production-item {
+  background-color: #F4F5F7;
+  border-radius: 10px;
+}
+
+.wrapper-collection1 {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.wrapper-collection2 {
+  max-width: 1236px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+/* ========================= Стилизация Collection Products End ============================*/
+/* ========================= Стилизация FOOTER Start ============================*/
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #F4F5F7;
+}
+
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+/* ========================= Стилизация FOOTER End ============================*/
+/*# sourceMappingURL=style.css.map */
