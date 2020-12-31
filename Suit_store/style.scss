@@ -7,6 +7,15 @@ $color6-header:#F4F5F7;
 $color7:#F8F9FA;
 $color8:#FFE6E0;
 
+$footer-bg: #222;
+$footer-border: #333;
+$footer-link: #ccc;
+$footer-link-hover: #99aa44;
+$white: #fff;
+
+
+
+
 body{
     font-family: 'IBM Plex Serif', serif;
     background-color: #ffffff;
@@ -21,7 +30,10 @@ body{
     }
 
     &-light{
-        background-color: #ffffff;
+        // background-color: #ffffff;
+        background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+        height:100%;
+        width:100%;
     }
 
     &-dark{
@@ -29,9 +41,8 @@ body{
     }
 }
 
-
 .wrapper{
-    max-width: 1236px;
+  max-width: 1024px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -75,6 +86,7 @@ body{
     font-size: 36px;
     margin-top: -20px;
     margin-bottom: 55px;
+    overflow-wrap: break-word;
 }
 /* ========================= Стилизация Collection title End ============================*/
 
@@ -92,37 +104,49 @@ body{
     text-decoration: none;
     padding: 8px 20px;
 }
+
+
+
 /* ========================= Стилизация Button End ============================*/
+
 
 
 /* ========================= Стилизация Main Start ============================*/
 .main{
     display: flex;
     margin-top: -50px;
+ 
     justify-content: space-between;
     &-item{
         flex: 50% 0 50%;
     }
+
+
     .sale{
         &-description{
             margin-top: -10px;
             font-size: 20px;
             margin-bottom: 40px;
-            margin-right: 250px;
+            margin-right: 150px;
+            overflow-wrap: break-word;
         }
         &-title1{
            margin-top: 90px;
-           font-size: 44px;
-           font-weight: 700; 
+           font-size: 34px;
+           font-weight: 500; 
+           overflow-wrap: break-word;
         }
         &-title2{
             margin-top: -25px;
             font-size: 44px;
             font-weight: 700; 
+            overflow-wrap: break-word;
+           
          }
     }
 }
 /* ========================= Стилизация Main End ============================*/
+
 
 
 /* ========================= Стилизация Notice Start ============================*/
@@ -131,8 +155,18 @@ body{
     font-size: 16px;
     text-transform: uppercase;
     padding: 50px 0;
-}
 
+    &-notice-title1{
+      width: 300px; /* Ширина блока */
+      overflow-wrap: break-word;
+      padding: 10px;
+      font-size: 44px;
+      text-align: center;
+      font-weight: 700;  
+      word-wrap: break-word; /* Перенос слов */ 
+      margin-bottom: 15px;
+   }
+}
 /* ========================= Стилизация Notice End ============================*/
 
 
@@ -142,21 +176,27 @@ body{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    width: 230px; /* Ширина блока */
+    padding: 10px;
 
     &-title{
        font-weight: 700;
-        margin-bottom: 15px;
+        margin-bottom: 15px; 
+        word-wrap: break-word;
     }
     &-description{
         color: #000;
-        margin-top: -10px;
+        margin-top: -10px; 
+        word-wrap: break-word;
      }
      &-item{
      background-color:$color6-header;
      border-radius: 10px;
+     
      }
 
 }
+
 .wrapper-collection1{
     max-width: 1236px;
     margin: 0 auto;
@@ -176,107 +216,208 @@ body{
 /* ========================= Стилизация Collection Products End ============================*/
 
 
+/* ========================= Стилизация Gallery Start ============================*/
+
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 250px 150px;
+  grid-auto-flow: dense;
+  max-width: width 1080px;;
+  margin: auto;
+}
+
+/* ========================= Стилизация Gallary End ============================*/
+
+
+.wrap {
+  
+  max-width: 1236px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+
+}
+
+.content .wrap {
+  padding-right: 300px;
+  top: 100px;
+  transform: none;
+  -moz-transform: none;
+  -webkit-transform: none;
+}
+
+.content .wrap p {
+  margin-bottom: 30px;
+  line-height: 1.8em;
+}
+
+
+
+
+
+
+
+
 
 /* ========================= Стилизация FOOTER Start ============================*/
 
   /* STYLES SPECIFIC TO FOOTER  */
+
   .footer {
-    width: 100%;
-    position: relative;
-    height: auto;
-    background-color:$color6-header;
-  }
-  .footer .col {
-    width: 190px;
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
-  }
-  .footer .col h1 {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
-  }
-  .footer .col ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .footer .col ul li {
-    color: #999999;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 5px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-  }
-  .social ul li {
-    display: inline-block;
-    padding-right: 5px !important;
+    background: $footer-bg;
+    padding: 30px 0 0 0;
+    
+    &-item {
+      margin: 0 0 30px 0;
+      overflow: hidden;
+      
+      @media (max-width: 767px) {
+        text-align: center;
+        margin: 0;
+      }
+      
+      img {
+        margin: 0 0 30px 0;
+      }
+  
+      p {
+        color: $footer-link;
+        font-size: 15px;
+        margin-bottom: 0px;
+        
+        @media (max-width: 767px) {
+          text-align: left;
+          margin-bottom: 30px;
+        }
+      }
+      
+      h4 {
+        color: $white;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 0 25px 0;
+        
+        @media (max-width: 767px) {
+          font-size: 32px;
+        }
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 0px;
+        overflow: hidden;
+  
+        &.social {
+          display: inline-flex;
+          margin: 0 auto;
+          width: auto;
+          
+          @media (max-width: 767px) {
+            margin-bottom: 30px;
+          }
+  
+          li {
+            float: left;
+            margin: 0 10px;
+            padding: 0;
+            
+            @media (max-width: 767px) {
+              margin: 0 15px;
+            }
+            
+            &:before {
+              content: "" !important;
+            }
+            
+            a {
+              i {
+                color: $footer-link;
+                font-size: 24px;
+                margin: 0;
+                transition: color .2s ease-in-out;
+                
+                @media (max-width: 767px) {
+                  font-size: 36px;
+                }
+              }
+              
+              &:hover i {
+                color: $white;
+              }
+            }
+          }
+        }
+        
+        li {
+          color: $footer-link;
+          line-height: 1.25;
+          margin-bottom: .75rem;
+          position: relative;
+          margin-left: 1rem;
+          
+          &:before {
+            font-family: 'fontawesome';
+            position: absolute;
+            top: .2rem;
+            left: -1.1rem;
+            font-size: .8rem;
+            color: $footer-link-hover;
+            content: '\f054';
+            transition: left .2s ease-in-out;
+            
+            @media (max-width: 767px) {
+              content: "" !important;
+            }
+          }
+  
+          &:hover:before {
+            left: -.95rem;
+          }
+  
+          a {
+            color: $footer-link;
+            font-size: 15px;
+            transition: color .2s ease-in-out;
+            text-decoration: none;
+            
+            @media (max-width: 767px) {
+              font-size: 24px;
+              color: $footer-link-hover;
+              
+              &:hover {
+                color: $white;
+              }
+            }
+  
+            &:hover {
+              color: $footer-link-hover;
+              
+              @media (max-width: 767px) {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    &-bottom {
+      border-top: 1px solid $footer-border;
+  
+      p {
+        color: $footer-link;
+        margin: 15px 0;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
   }
   
-  .footer .col ul li:hover {
-    color: #ffffff;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
-  }
-  .clearfix {
-    clear: both;
-  }
-  @media only screen and (min-width: 1280px) {
-    .contain {
-      width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  @media only screen and (max-width: 1139px) {
-    .contain .social {
-      width: 1000px;
-      display: block;
-    }
-    .social h1 {
-      margin: 0px;
-    }
-  }
-  @media only screen and (max-width: 950px) {
-    .footer .col {
-      width: 33%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h1 {
-        font-size: 14px;
-      }
-      .footer .col ul li {
-        font-size: 13px;
-      }
-  }
-  @media only screen and (max-width: 340px) {
-    .footer .col {
-      width: 100%;
-    }
-  }
   /* ========================= Стилизация FOOTER End ============================*/
+
+  .row {
+    margin: 15px;
+  } 
