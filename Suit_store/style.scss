@@ -30,8 +30,6 @@ body{
     }
 
     &-light{
-        // background-color: #ffffff;
-        background-image: url('http://i.stack.imgur.com/kx8MT.gif');
         height:100%;
         width:100%;
     }
@@ -42,7 +40,7 @@ body{
 }
 
 .wrapper{
-  max-width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -55,6 +53,7 @@ body{
     justify-content: space-between;
     align-items: center;  
 }
+
 .nav{
     display: flex;
     list-style-type: none;
@@ -67,6 +66,7 @@ body{
         text-decoration: none;  
     }
 }
+
 .cart{
     background-image: url(../img/Icons-shop.png);
     display: block;
@@ -104,9 +104,6 @@ body{
     text-decoration: none;
     padding: 8px 20px;
 }
-
-
-
 /* ========================= Стилизация Button End ============================*/
 
 
@@ -120,8 +117,6 @@ body{
     &-item{
         flex: 50% 0 50%;
     }
-
-
     .sale{
         &-description{
             margin-top: -10px;
@@ -146,27 +141,48 @@ body{
     }
 }
 /* ========================= Стилизация Main End ============================*/
+.p {
+  font-size: 120px;
+  margin: 15px;
+  text-align: center;
+  padding: 25px;
 
+}
 
 
 /* ========================= Стилизация Notice Start ============================*/
 .notice{
     text-align: center;
-    font-size: 16px;
+    font-size: 2216px;
     text-transform: uppercase;
     padding: 50px 0;
 
-    &-notice-title1{
-      width: 300px; /* Ширина блока */
+    &-title1{
+      width: 30px; /* Ширина блока */
       overflow-wrap: break-word;
       padding: 10px;
       font-size: 44px;
       text-align: center;
-      font-weight: 700;  
       word-wrap: break-word; /* Перенос слов */ 
       margin-bottom: 15px;
-   }
-}
+      span{
+      font-weight: 700;  
+      }
+   
+    }
+
+    &-description1{
+      width: 150px; /* Ширина блока */
+      overflow-wrap: break-word;
+      padding: 10px;
+      font-size: 80px;
+      text-align: center;
+      word-wrap: break-word; /* Перенос слов */ 
+      margin-bottom: 15px;
+    }
+
+
+  }
 /* ========================= Стилизация Notice End ============================*/
 
 
@@ -196,7 +212,6 @@ body{
      }
 
 }
-
 .wrapper-collection1{
     max-width: 1236px;
     margin: 0 auto;
@@ -212,12 +227,12 @@ body{
     padding-right: 15px;
     padding-bottom: 20px;
 }
-
 /* ========================= Стилизация Collection Products End ============================*/
 
 
-/* ========================= Стилизация Gallery Start ============================*/
 
+
+/* ========================= Стилизация Gallery Start ============================*/
 .gallery {
   display: grid;
   grid-gap: 10px;
@@ -227,45 +242,10 @@ body{
   max-width: width 1080px;;
   margin: auto;
 }
-
 /* ========================= Стилизация Gallary End ============================*/
 
 
-.wrap {
-  
-  max-width: 1236px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-
-}
-
-.content .wrap {
-  padding-right: 300px;
-  top: 100px;
-  transform: none;
-  -moz-transform: none;
-  -webkit-transform: none;
-}
-
-.content .wrap p {
-  margin-bottom: 30px;
-  line-height: 1.8em;
-}
-
-
-
-
-
-
-
-
-
 /* ========================= Стилизация FOOTER Start ============================*/
-
-  /* STYLES SPECIFIC TO FOOTER  */
-
   .footer {
     background: $footer-bg;
     padding: 30px 0 0 0;
@@ -415,9 +395,4 @@ body{
       }
     }
   }
-  
   /* ========================= Стилизация FOOTER End ============================*/
-
-  .row {
-    margin: 15px;
-  } 
