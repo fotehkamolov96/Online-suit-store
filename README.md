@@ -7,9 +7,9 @@
 Вы можете скачать и посмотреть. В ближайшее время буду обновлять материалы и улучшить под мобильной версии.
 
 Обратная связь:
-—
-Instagram  https://www.instagram.com/fkamollov
-Telegram   https://t.me/codeef
+📌
+📌Instagram  https://www.instagram.com/fkamollov
+📌Telegram   https://t.me/codeef
 
 
 С уважением 🌿
