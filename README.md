@@ -1,6 +1,5 @@
 # Online-suit-store
 
-Online-suit-store
 Магазин мужской одежды
 Верстка интернет-Магазин мужской одежды с нуля | HTML, SCSS |
 
